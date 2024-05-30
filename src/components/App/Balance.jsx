@@ -16,10 +16,8 @@ export default function Balance() {
         value={value}
         onChange={(e) => setValue(Number(e.target.value))}
       />
-      <button onClick={() => dispatch(deposit(value))} disabled={balance < 0}>
-        Deposit credits
-      </button>
-      <button onClick={() => dispatch(withdraw(value))} disabled={balance < 1}>
+      <button onClick={() => dispatch(deposit(value))}>Deposit credits</button>
+      <button onClick={() => dispatch(withdraw(value))}>
         Withdraw credits
       </button>
     </div>
