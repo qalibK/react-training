@@ -6,10 +6,10 @@ const slice = createSlice({
     value: 0,
   },
   reducers: {
-    deposit: (state, action) => {
+    deposit(state, action) {
       state.value += action.payload;
     },
-    withdraw: (state, action) => {
+    withdraw(state, action) {
       state.value -= action.payload;
     },
   },
